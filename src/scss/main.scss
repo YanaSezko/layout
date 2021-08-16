@@ -1,0 +1,11 @@
+@import "vendor";
+@font-face {
+    font-family: "WebServeroff";
+    src: url("./../fonts/WebServeroff.woff2");
+  }
+
+body{
+    background: rgb(12, 80, 60) ;
+    background-image: url("../img/image.jpg");
+    font-family: "WebServeroff";
+}
