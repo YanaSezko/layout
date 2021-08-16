@@ -1,11 +1,43 @@
 @import "vendor";
-@font-face {
-    font-family: "WebServeroff";
-    src: url("./../fonts/WebServeroff.woff2");
-  }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap");
 
-body{
-    background: rgb(12, 80, 60) ;
-    background-image: url("../img/image.jpg");
-    font-family: "WebServeroff";
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  width: 1150px;
+  min-height: 990px;
+  margin: 0 auto;
+}
+body {
+  background: #fff;
+  font-family: "Josefin Sans";
+  .header_top {
+    display: grid;
+    grid-template-columns: 252px 1fr;
+    padding: 35px;
+    .nav_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      input {
+        border: none;
+      }
+      &:before {
+        content: url("../img/icons/search.svg");
+        position: absolute;
+        left: -30px;
+      }
+    }
+    .header_navigation ul {
+      display: flex;
+      list-style: none;
+      li{
+        padding-left: 40px;
+      }
+    }
+  }
 }
