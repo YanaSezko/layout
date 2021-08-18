@@ -9,122 +9,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .container {
-  width: 1400px;
-  margin: 0 auto;
-  background-color: darkgoldenrod;
-   .mainContant {
-    display: grid;
-    grid-template-columns: 20% repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    
-
-    img {
-      object-fit: cover;
-      object-position: center;
-      border-radius: 10px;
-  }
-  }
-} */
 body {
   background: #fff;
   font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
   .container {
     width: 1440px;
+    min-height: 100vh;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    //background-color: chocolate;
-    header {
-      min-height: 143px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .header_navigation ul {
-        display: flex;
-        list-style: none;
-        li {
-          padding-left: 20px;
-        }
-      }
-    }
-    .mainContant {
-      display: flex;
-      justify-content: space-between;
-      .mainContant_explore {
-        min-width: 252px;
-        ul {
-          list-style: none;
-        }
-      }
-      .mainContant_info {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-grid-gap: 21px;
-        img {
-          object-fit: contain;
-          border-radius: 15px;
-        }
-
-        .blocOfDiscounts {
-          width: 539px;
-          height: 382px;
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 1;
-          grid-row-end: 2;
-          // background-color: aquamarine;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-        }
-        .photoBlockFirst {
-          width: 539px;
-          height: 382px;
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 1;
-          grid-row-end: 2;
-          display: flex;
-          justify-content: space-between;
-          //  background-color: chartreuse;
-        }
-        .photoBlockSecond {
-          width: 539px;
-          height: 382px;
-          grid-column-start: 1;
-          grid-column-end: 2;
-          grid-row-start: 2;
-          grid-row-end: 3;
-          display: flex;
-          justify-content: space-between;
-          // background-color: blueviolet;
-        }
-        .adUnit {
-          width: 539px;
-          height: 382px;
-          grid-column-start: 2;
-          grid-column-end: 3;
-          grid-row-start: 2;
-          grid-row-end: 3;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          
-          // background-color: blue;
-          img {
-            width: 539px;
-            height: 180px;
-          
-            &:last-child {
-              object-fit: contain;
-              background: #e9e5e2;
-                                
-            }
-          }
-        }
-      }
-    }
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 143px 790px;
   }
 }

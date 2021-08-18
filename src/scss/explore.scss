@@ -4,3 +4,36 @@
     grid-row-start: 1;
     grid-row-end: 3;
 } */
+
+.explore_list {
+    position: relative;
+    li {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 15px;
+        list-style: inside;
+
+    }
+    .explore_newIn {
+        list-style-image: url("../img/icons/sidebar/newIn.png");
+
+    }
+    .explore_clothing {
+        list-style-image: url("../img/icons/sidebar/clothing.png");
+    }
+    .explore_shoes {
+        list-style-image: url("../img/icons/sidebar/shoes.png");
+    }
+    .explore_accessories {
+        list-style-image: url("../img/icons/sidebar/accessories.png");
+    }
+    .explore_activewear {
+        list-style-image: url("../img/icons/sidebar/activewear.png");
+    }
+    .explore_gifts {
+        list-style-image: url("../img/icons/sidebar/gifts.png");
+    }
+    .explore_inspiration {
+        list-style-image: url("../img/icons/sidebar/inspiration.png");
+    }
+}

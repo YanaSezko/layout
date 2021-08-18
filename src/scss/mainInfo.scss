@@ -1,41 +1,128 @@
-/* .blocOfDiscounts {
-    background-color: blueviolet;
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 1;
+.mainContant {
+    display: grid;
+    grid-template-columns: 340px auto;
+ 
+    .mainContant_explore {
+        ul {
+            list-style: none;
+        }
+    }
+    .mainContant_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 21px;
+        img {
+            object-fit: contain;
+            border-radius: 15px;
+        }
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.photoBlockFirst {
-    background-color: rgb(179, 29, 29);
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.photoBlockSecond {
-    background-color: chartreuse;
-    grid-column: 2 / span 1;
-    grid-row: 2 / span 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.adUnit {
-    background-color: darkcyan;
-    grid-column: 3 / span 1;
-    grid-row: 2 / span 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    img{
-        background-color: gainsboro;
-        
-        
+        .blocOfDiscounts {
+            width: 539px;
+            height: 382px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            // background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .photoBlockFirst {
+            width: 539px;
+            height: 382px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            display: flex;
+            justify-content: space-between;
+            img {
+                position: relative;
+                &:after {
+                    content: url("../img/icons/heart.png");
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            //  background-color: chartreuse;
+        }
+        .photoBlockSecond {
+            width: 539px;
+            height: 382px;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex;
+            justify-content: space-between;
+            img {
+                position: relative;
+                &:after {
+                    content: url("../img/icons/heart.png");
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 1001;
+                }
+            }
+            // background-color: blueviolet;
+        }
+        .adUnit {
+            width: 539px;
+            height: 382px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            // background-color: blue;
+            p {
+                position: absolute;
+                top: 105px;
+                left: 30px;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 23px;
+                color: #000000;
+            }
+            .adUnit_top {
+                position: relative;
+                h2 {
+                    position: absolute;
+                    top: 62px;
+                    left: 30px;
+                    font-weight: 800;
+                    font-size: 26px;
+                    line-height: 40px;
+                    color: #001aa2;
+                }
+            }
+            .adUnit_bottom {
+                position: relative;
+                width: 539px;
+                height: 180px;
+                background: #e6e1dd;
+                border-radius: 15px;
+                h2 {
+                    position: absolute;
+                    top: 62px;
+                    left: 30px;
+                    font-weight: 800;
+                    font-size: 26px;
+                    line-height: 40px;
+                    color: #fd2e24;
+                }
+                img {
+                    position: absolute;
+                    right: -15px;
+                    object-fit: contain;
+                }
+            }
+        }
     }
 }
- */
