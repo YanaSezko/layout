@@ -501,7 +501,7 @@ module.exports = __webpack_require__.p + "img/logo.0e9807cd030fdaf459d1.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/layout/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

@@ -5,7 +5,7 @@
   "homepage": "http://YanaSezko.github.io/layout",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "build": "webpack --mode production",
     "dev": "cross-env NODE_ENV=development webpack --mode development",
     "start": "cross-env NODE_ENV=development webpack serve --mode development",
     "predeploy": "npm run build",
@@ -27,6 +27,7 @@
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.2",
     "image-minimizer-webpack-plugin": "^2.2.0",
+    "imagemin-optipng": "^8.0.0",
     "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^6.0.1",
     "sass-loader": "^12.1.0",
